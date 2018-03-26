@@ -1,0 +1,20 @@
+################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+.vs
+packages
+bin/
+obj/
+App_Data/
+VCRS.Plugins.Umbraco/bld/
+VCRS.Plugins.Umbraco/node_modules
+VCRS.Plugins.Umbraco/Vcrs.Plugins.Umbraco.csproj.user
+Vcrs.Plugins.Extensions/bin/Debug
+Vcrs.Plugins.Extensions/obj/Debug
+Vcrs.Plugins.Extensions/bin/Release
+Vcrs.Plugins.Extensions/obj/Release
+VCRS.Plugins.Umbraco/obj/Release
+VCRS.Plugins.Umbraco.sln.DotSettings.user
+VCRS.Plugins.Umbraco.sln.DotSettings.zip
+/Vcrs.Plugins.Umbraco.Tests/bin/Release
+/Vcrs.Plugins.Umbraco.Tests/obj/Release

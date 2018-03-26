@@ -1,0 +1,132 @@
+{
+  "NAVIGATION": {
+    "GARAGE": "Garage / Log in",
+    "CREDENTIALS": "Credentials",
+    "CONFIRMATION": "Confirmation"
+  },
+  "Monday": "Monday",
+  "Tuesday": "Tuesday",
+  "Wednesday": "Wednesday",
+  "Thursday": "Thursday",
+  "Friday": "Friday",
+  "Saturday": "Saturday",
+  "Sunday": "Sunday",
+  "Mo": "Mo",
+  "Tu": "Tu",
+  "We": "We",
+  "Th": "Th",
+  "Fr": "Fr",
+  "Sa": "Sa",
+  "Su": "Su",
+  "Jan": "Jan",
+  "Feb": "Feb",
+  "Mar": "Mar",
+  "Apr": "Apr",
+  "May": "May",
+  "June": "June",
+  "July": "July",
+  "Aug": "Aug",
+  "Sep": "Sep",
+  "Oct": "Oct",
+  "Nov": "Nov",
+  "Dec": "Dec",
+  "January": "January",
+  "February": "February",
+  "March": "March",
+  "April": "April",
+  "August": "August",
+  "September": "September",
+  "October": "October",
+  "November": "November",
+  "December": "December",
+  "REQUEST": {
+    "MAKENEWREQOR": "Search again or",
+    "RETRY": "Retry",
+    "NORESULTSEARCH": "Couldn't find any car with that registration number",
+    "NORESULTSEARCHSERVICE": "Couldn't find any service with specified milage",
+    "SERVEROFFLINE": "Couldn't reach the server, please try again later.",
+    "CLIENTOFFLINE": "Looks like you're not connected to the Internet...",
+    "BADREQUEST": "Sorry, something went wrong, please try again later",
+    "NOFREETIMESLOTFOUND":"The selected time is not available anymore",
+    "NOTFOUND":"Couldn't find any car with that registration number",
+    "CARNOTFOUND":"Couldn't find any car with that registration number. Contact us at 070-7080808 for help",
+    "WORKSHOPNOTFOUND":"Couldn't find any workshop with that id. Contact us at 070-7080808 for help",
+    "WORKSHOPNOTFOUND!":"Couldn't find any workshop with that id. Contact us at 070-7080808 for help",
+    "MILAGENOTSPECIFIED":"No milage where specified. Contact us at 070-7080808 for help",
+    "ANERRORHASOCCURRED.":"Can not make a booking, please contact your workshop"
+  },
+  "GARAGE": {
+    "BOOKWHEELCHANGE": "Book wheel change",
+    "BOOKSERVICE": "Book Service",
+    "YOURCAR": "Your car",
+    "NOCAR": "No car choosen",
+    "PROCEED": "Proceed",
+    "FINDWORKSHOP": "Find workshop",
+    "CHOOSEDATE": "Choose date",
+    "CHOOSETIME": "Choose time",
+    "CHOOSEANOTHERCAR": "Choose an another car",
+    "INCLUDESWHAT": "Choose an another car",
+    "VEHICLEPICKER": {
+      "REGISTRATIONNUMBER": "Registration number",
+      "PLACEHOLDER": "Insert reg. nr for the vehicle",
+      "SEARCHVEHICLE": "Search vehicle",
+      "FINDWORSHOP": "Find workshop",
+      "PROCEEDWITH": "Proceed with",
+      "PROCEEDWITHOUT": "Proceed without selecting a vehicle",
+      "MANUFACTURE": "Manufacture",
+      "MODEL": "Model",
+      "COLOR": "Color",
+      "TIRESTORAGE": "Tire storage",
+      "HASTIRESTORAGE": "Yes, your car has tire storage",
+      "MILAGENUMBER": "Milage Number",
+      "MILAGE": "Mile"
+    },
+    "WORKSHOPPICKER": {
+      "PHONE": "Phone",
+      "NEXTAVAILABLETIME": "Next available time",
+      "MAPSELECT": "Select",
+      "SEARCHHINT": "Search for workshop, address or city..."
+    },
+    "TIMEPICKER": {
+      "PREV": "Earlier date",
+      "NEXT": "Later date",
+      "BOOKTIME": "Book time"
+    }
+  },
+  "CREDENTIALS": {
+    "TITLE": "Credentials",
+    "PROCEED": "Proceed",
+    "PRODUCTPLURAL": "Products",
+    "PRODUCTSINGULAR": "Product",
+    "INCLUDEVAT": "VAT included",
+    "CHOOSEPAYMENT": "Choose payment method",
+    "CARD": "Visa/Mastercard",
+    "INVOICE": "Invoice",
+    "PAYINSTORES": "Pay in stores",
+    "SUMMARY": "Summary",
+    "FORM": {
+      "FNAME": "First name",
+      "LNAME": "Last name",
+      "EMAIL": "Email",
+      "PHONE": "Phone",
+      "ADDRESS": "Address",
+      "ZIP": "Zip",
+      "CITY": "City",
+      "COUNTRY": "Country"
+    }
+  },
+  "INPUT": {
+    "ERROR": {
+      "WRONGFORMAT": "Wrong format",
+      "ISREQUIRED": "Field is required",
+      "WRONGEMAILFORMAT": "Wrong format",
+      "SERVICETIMEDOUT": "A input fileds validation services timed out after 15 seconds waiting. This is probably because a faulty validation service"
+    }
+  },
+  "ERROR": {
+    "404": "Not found",
+    "400": "Something went wrong",
+    "500": "Internal server error",
+    "0": "No internet connection"
+  }
+}

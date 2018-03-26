@@ -1,0 +1,31 @@
+﻿@using Vcrs.Core.Client.HtmlHelpers
+@using Vcrs.Plugins.Extensions.HtmlHelpers
+
+@{
+	string proxyUrl = !String.IsNullOrEmpty(Convert.ToString(ViewData["proxyUrl"])) ? Convert.ToString(ViewData["proxyUrl"]) : "/proxy/";
+	string workshopFilter = !String.IsNullOrEmpty(Convert.ToString(ViewData["workshopFilter"])) ? Convert.ToString(ViewData["workshopFilter"]) : "";
+}
+
+@{
+    Html.Assets().Styles.Add(Html.VcrsStyleResourceLink("toaster.css"));
+}
+
+<div class="m-b p-y">
+    <script>
+        window.localStorage.setItem('tacdisproxyurl', '@proxyUrl');
+        @Html.VcrsTranslationResourse("", "servicebooking")
+    </script>
+
+    @if (String.IsNullOrEmpty(workshopFilter)) {
+        <tacdis-servicebooking></tacdis-servicebooking>
+    } else {
+        <tacdis-servicebooking workshop-filter="@workshopFilter"></tacdis-servicebooking>
+    }
+
+    @Html.VcrsJavascriptResourse("vendor.js", "servicebooking")
+    @Html.VcrsJavascriptResourse("polyfills.js", "servicebooking")
+    @Html.VcrsJavascriptResourse("tacdis.core.js", "servicebooking")
+    @Html.VcrsJavascriptResourse("tacdis.servicebooking.js", "servicebooking")
+    @Html.VcrsJavascriptResourse("translation.js", "servicebooking")
+    @Html.VcrsJavascriptResourse("app.js", "servicebooking")
+</div>

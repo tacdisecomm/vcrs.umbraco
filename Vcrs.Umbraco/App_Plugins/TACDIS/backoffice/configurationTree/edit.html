@@ -1,0 +1,60 @@
+﻿<form name="configurationForm"
+      ng-controller="TACDIS.configurationTree.editController"
+      ng-show="loaded"
+      ng-submit="save(configurationItem)"
+      val-form-manager>
+    <umb-panel>
+        <umb-header>
+            <div class="span5">
+                <div class="btn-toolbar pull-right umb-btn-toolbar">
+                    <umb-options-menu ng-show="currentNode"
+                                      current-node="currentNode"
+                                      current-section="{{currentSection}}">
+                    </umb-options-menu>
+                </div>
+            </div>
+        </umb-header>
+        <div class="umb-panel-body umb-scrollable row-fluid">
+            <div class="tab-content form-horizontal" style="padding-bottom: 90px">
+                <div class="umb-pane">
+                    <umb-control-group label="Service url" description="Service url">
+                        <input type="text" class="umb-editor umb-textstring" ng-model="configurationItem.ServiceUrl" required />
+                    </umb-control-group>
+
+                    <umb-control-group label="Remote url" description="Resource url">
+                        <input type="text" class="umb-editor umb-textstring" ng-model="configurationItem.ResourceUrl" required />
+                    </umb-control-group>
+
+                    <umb-control-group label="Api key" description="Api key">
+                        <input type="text" class="umb-editor" ng-model="configurationItem.ApiKey" required />
+                    </umb-control-group>
+
+                    <umb-control-group label="Tenant id (First)" description="Tenant id for first tenant. Define proxy in plugin for using this value. This value is mandatory">
+                        <input type="text" class="umb-editor" ng-model="configurationItem.TenantId1" required />
+                        <input type="text" class="umb-editor" ng-model="configurationItem.ProxyUrl1" required />
+                    </umb-control-group>
+                    <umb-control-group label="Tenant id (Second)" description="Tenant id for second tenant. Only used when having multiple tenants in same dealer. Optional">
+                        <input type="text" class="umb-editor" ng-model="configurationItem.TenantId2" />
+                        <input type="text" class="umb-editor" ng-model="configurationItem.ProxyUrl2" />
+                    </umb-control-group>
+                    <umb-control-group label="Tenant id (Third)" description="Tenant id for third tenant. Only used when having multiple tenants in same dealer. Optional">
+                        <input type="text" class="umb-editor" ng-model="configurationItem.TenantId3" />
+                        <input type="text" class="umb-editor" ng-model="configurationItem.ProxyUrl3" />
+                    </umb-control-group>
+
+                    <umb-control-group label="Version cache expiretime (in minutes)" description="Version cache expiretime (in minutes)">
+                        <input type="text" class="umb-editor" ng-model="configurationItem.CacheExpirationTime" required />
+                    </umb-control-group>
+
+                    <div class="umb-tab-buttons" detect-fold>
+                        <div class="btn-group">
+                            <button type="submit" data-hotkey="ctrl+s" class="btn btn-success">
+                                <localize key="buttons_save">Save</localize>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </umb-panel>
+</form>

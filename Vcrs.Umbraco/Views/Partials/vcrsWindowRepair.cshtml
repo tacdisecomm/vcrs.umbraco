@@ -1,0 +1,36 @@
+﻿@using Vcrs.Core.Client.HtmlHelpers
+@using Vcrs.Plugins.Extensions.HtmlHelpers
+
+@{
+    string proxyUrl = !String.IsNullOrEmpty(Convert.ToString(ViewData["proxyUrl"])) ? Convert.ToString(ViewData["proxyUrl"]) : "/proxy/";
+    string workshopFilter = !String.IsNullOrEmpty(Convert.ToString(ViewData["workshopFilter"])) ? Convert.ToString(ViewData["workshopFilter"]) : "";
+}
+
+@{
+    Html.Assets().Styles.Add(Html.VcrsStyleResourceLink("toaster.css"));
+}
+
+<div class="m-b p-y">
+    <script>
+        window.localStorage.setItem('tacdisproxyurl', '@proxyUrl');
+        @Html.VcrsTranslationResourse("", "windowrepair")
+        @Html.VcrsCitiesResourse("cities.json", "windowrepair")
+    </script>
+
+    @if (String.IsNullOrEmpty(workshopFilter))
+    {
+        <tacdis-windowrepair></tacdis-windowrepair>
+    }
+    else
+    {
+        <tacdis-windowrepair workshop-filter="@workshopFilter"></tacdis-windowrepair>
+    }
+
+    @Html.VcrsJavascriptResourse("vendor.js", "windowrepair")
+    @Html.VcrsJavascriptResourse("polyfills.js", "windowrepair")
+    @Html.VcrsJavascriptResourse("tacdis.core.js", "windowrepair")
+    @Html.VcrsJavascriptResourse("tacdis.windowrepair.js", "windowrepair")
+    @Html.VcrsJavascriptResourse("translation.js", "windowrepair")
+    @Html.VcrsJavascriptResourse("app.js", "windowrepair")
+
+</div>

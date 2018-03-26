@@ -1,0 +1,38 @@
+﻿@using Vcrs.Core.Client.HtmlHelpers
+@using Vcrs.Plugins.Extensions.HtmlHelpers
+
+@{
+    string proxyUrl = !String.IsNullOrEmpty(Convert.ToString(ViewData["proxyUrl"])) ? Convert.ToString(ViewData["proxyUrl"]) : "/proxy/";
+    string workshopFilter = !String.IsNullOrEmpty(Convert.ToString(ViewData["workshopFilter"])) ? Convert.ToString(ViewData["workshopFilter"]) : "";
+}
+
+@{
+    Html.Assets().Styles.Add(Html.VcrsStyleResourceLink("leaflet.css"));
+    Html.Assets().Styles.Add(Html.VcrsStyleResourceLink("toaster.css"));
+}
+
+<div class="m-b p-y">
+    <script>
+        window.localStorage.setItem('tacdisproxyurl', '@proxyUrl');
+        @Html.VcrsTranslationResourse("", "wheelchange")
+        @Html.VcrsCitiesResourse("cities.json", "wheelchange")
+
+    </script>
+
+    @if (String.IsNullOrEmpty(workshopFilter))
+    {
+        <vcrs-wheelchange></vcrs-wheelchange>
+    }
+    else
+    {
+        <vcrs-wheelchange workshop-filter="@workshopFilter"></vcrs-wheelchange>
+    }
+
+    @Html.VcrsJavascriptResourse("vendor.js", "wheelchange")
+    @Html.VcrsJavascriptResourse("polyfills.js", "wheelchange")
+    @Html.VcrsJavascriptResourse("tacdis.core.js", "wheelchange")
+    @Html.VcrsJavascriptResourse("tacdis.wheelchange.js", "wheelchange")
+    @Html.VcrsJavascriptResourse("translation.js", "wheelchange")
+    @Html.VcrsJavascriptResourse("app.js", "wheelchange")
+
+</div>

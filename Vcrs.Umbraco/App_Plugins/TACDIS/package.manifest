@@ -1,0 +1,6 @@
+﻿﻿{
+javascript: [
+  '~/App_Plugins/TACDIS/backoffice/configurationTree/edit.controller.js',
+  '~/App_Plugins/TACDIS/vcrs.resource.js',
+]
+}

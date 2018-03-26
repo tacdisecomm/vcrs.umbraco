@@ -1,0 +1,132 @@
+{
+  "NAVIGATION": {
+    "GARAGE": "Min bokning",
+    "CREDENTIALS": "Mina uppgifter",
+    "CONFIRMATION": "Bekräftelse"
+  },
+  "Monday": "Måndag",
+  "Tuesday": "Tisdag",
+  "Wednesday": "Onsdag",
+  "Thursday": "Torsdag",
+  "Friday": "Fredag",
+  "Saturday": "Lördag",
+  "Sunday": "Söndag",
+  "Mo": "Må",
+  "Tu": "Ti",
+  "We": "On",
+  "Th": "To",
+  "Fr": "Fr",
+  "Sa": "Lö",
+  "Su": "Sö",
+  "Jan": "Jan",
+  "Feb": "Feb",
+  "Mar": "Mars",
+  "Apr": "April",
+  "May": "Maj",
+  "June": "Juni",
+  "July": "Juli",
+  "Aug": "Aug",
+  "Sep": "Sep",
+  "Oct": "Okt",
+  "Nov": "Nov",
+  "Dec": "Dec",
+  "January": "Januari",
+  "February": "Februari",
+  "March": "Mars",
+  "April": "April",
+  "August": "Augusti",
+  "September": "September",
+  "October": "Oktober",
+  "November": "November",
+  "December": "December",
+  "REQUEST": {
+    "MAKENEWREQOR": "Gör en ny sökning eller",
+    "RETRY": "Försök igen",
+    "NORESULTSEARCH": "Kunde inte hitta någon bil med det registreringsnummret",
+    "NORESULTSEARCHSERVICE": "Kunde inte hitta någon service för det miltalet",
+    "SERVEROFFLINE": "Servern gick tyvärr inte att nå, försök igen senare.",
+    "CLIENTOFFLINE": "Du är inte ansluten till internet...",
+    "BADREQUEST": "Tyvärr gick något fel, var god försök senare igen",
+    "NOFREETIMESLOTFOUND": "Den valda tiden är ej tillgänglig längre",
+    "NOTFOUND": "Kunde inte hitta någon bil med det registreringsnummret",
+    "CARNOTFOUND":"Kunde inte hitta någon bil med det registreringsnummret. Kontakta oss på 070-7080808 för mer hjälp",
+    "WORKSHOPNOTFOUND":"Kunde inte hitta någon verkstad med det id:et. Kontakta oss på 070-7080808 för mer hjälp",
+    "WORKSHOPNOTFOUND!":"Kunde inte hitta någon verkstad med det id:et. Kontakta oss på 070-7080808 för mer hjälp",
+    "MILAGENOTSPECIFIED":"Inga miltal var specifierade. Kontakta oss på 070-7080808 för mer hjälp",
+    "ANERRORHASOCCURRED.":"Kan inte genomföra bokningen, vänligen kontakta din verkstad"
+  },
+  "GARAGE": {
+    "BOOKWHEELCHANGE": "Boka hjulskifte",
+    "BOOKSERVICE": "Boka Service",
+    "YOURCAR": "Din bil",
+    "NOCAR": "Ingen bil vald",
+    "PROCEED": "Gå vidare för att boka vald tid",
+    "FINDWORKSHOP": "Hitta verkstad",
+    "CHOOSEDATE": "Välj datum",
+    "CHOOSETIME": "Välj tid",
+    "CHOOSEANOTHERCAR": "Välj en annan bil",
+    "INCLUDESWHAT": "Vad ingår?",
+    "VEHICLEPICKER": {
+      "REGISTRATIONNUMBER": "Registreringsnummer",
+      "PLACEHOLDER": "Ange reg. nr för bil",
+      "SEARCHVEHICLE": "Hämta fordon",
+      "FINDWORSHOP": "Hitta verkstad",
+      "PROCEEDWITH": "Gå vidare",
+      "PROCEEDWITHOUT": "Gå vidare utan reg. nr.",
+      "MANUFACTURE": "Fabrikat",
+      "MODEL": "Modell",
+      "COLOR": "Färg",
+      "TIRESTORAGE": "Däckhotell",
+      "HASTIRESTORAGE": "Ja, din bil har däckhotell",
+      "MILAGENUMBER": "Miltal",
+      "MILAGE": "Mil"
+    },
+    "WORKSHOPPICKER": {
+      "PHONE": "Telefon",
+      "NEXTAVAILABLETIME": "Nästa lediga tid",
+      "MAPSELECT": "Välj",
+      "SEARCHHINT": "Sök på verkstad, adress eller stad..."
+    },
+    "TIMEPICKER": {
+      "PREV": "Tidigare datum",
+      "NEXT": "Senare datum",
+      "BOOKTIME": "Boka tid"
+    }
+  },
+  "CREDENTIALS": {
+    "TITLE": "Uppgifter",
+    "PROCEED": "Bekräfta bokning",
+    "PRODUCTPLURAL": "Varor",
+    "PRODUCTSINGULAR": "Vara",
+    "INCLUDEVAT": "Inkl. moms",
+    "CHOOSEPAYMENT": "Välj betalmetod",
+    "CARD": "Visa/Mastercard",
+    "INVOICE": "Faktura",
+    "PAYINSTORES": "Betala i butik",
+    "SUMMARY": "Totalt",
+    "FORM": {
+      "FNAME": "Förnamn",
+      "LNAME": "Efternamn",
+      "EMAIL": "E-mail",
+      "PHONE": "Telefon",
+      "ADDRESS": "Adress",
+      "ZIP": "Postnummer",
+      "CITY": "Postort",
+      "COUNTRY": "Land"
+    }
+  },
+  "INPUT": {
+    "ERROR": {
+      "WRONGFORMAT": "Fel format",
+      "ISREQUIRED": "Obligatorsikt fält",
+      "WRONGEMAILFORMAT": "Fel format",
+      "SERVICETIMEDOUT": "Ett inputfälts valideringsservice svarade inte efter 15 sekunder. Felet beror troligtvis på att det är fel på själva valideringsservicen"
+    }
+  },
+  "ERROR": {
+    "404": "Hittades ej",
+    "400": "Något gick fel",
+    "500": "Problem med servern",
+    "0": "Ingen internetanslutning"
+  }
+}

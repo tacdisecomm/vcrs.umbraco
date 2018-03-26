@@ -1,0 +1,38 @@
+﻿@inherits UmbracoTemplatePage
+@{
+    // Model.Content is the current page that we're on
+    // AncestorsOrSelf is all of the ancestors this page has in the tree
+    // (1) means: go up to level 1 and stop looking for more ancestors when you get there
+    // First() gets the first ancestor found (the home page, on level 1)
+    var homePage = CurrentPage.AncestorsOrSelf(1).First();
+
+    // The menu items we want are all of the children of the homepage
+    // We also check if "Hide in navigation" is on in the menu, we shouldn't show hidden items
+    var menuItems = homePage.Children.Where("UmbracoNaviHide == false");
+}
+<!-- Nav -->
+<header class="header">
+    <div class="container">
+        <div class="header-helper">
+            <button class="menu-toggler" data-toggle-mobilenav></button>
+            <a href="/" class="logo-container">
+                <h1>VCRS Demo Dealer</h1>
+            </a>
+            <div class="navigation-container hidden-lt-md">
+                <div class="navigation">
+                    <nav class="mainnavigation">
+                        <ul class="menu">
+                            <li class="menu-item"><a href="@homePage.Url">@homePage.Name</a></li>
+                            @foreach (var item in menuItems)
+                            {
+                                <li class="menu-item"><a href="@item.Url">@item.Name</a></li>
+                            }
+                            <li class="menu-item"><i class="icon-search m-l-half"></i></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- /Nav -->
