@@ -248,6 +248,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\TACDIS\backoffice\configurationTree\edit.controller.js" />
+    <Content Include="App_Plugins\TACDIS\backoffice\configurationTree\edit.html" />
+    <Content Include="App_Plugins\TACDIS\vcrs.resource.js" />
+    <Content Include="bin\PackageActionsContrib.dll" />
+    <Content Include="bin\Vcrs.Core.Client.dll" />
+    <Content Include="bin\Vcrs.Plugins.Extensions.dll" />
+    <Content Include="bin\Vcrs.Plugins.Umbraco.dll" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
@@ -271,7 +278,10 @@
     <Content Include="config\BackOfficeTours\getting-started.json" />
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
+    <Content Include="App_Data\packages\installed\installedPackages.config" />
+    <Content Include="App_Plugins\TACDIS\package.manifest" />
     <None Include="packages.config" />
+    <Content Include="vcrs_plugin\assets\styles\app.css" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -283,6 +293,23 @@
     <Content Include="Views\Partials\Grid\Bootstrap3-Fluid.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2.cshtml" />
     <Content Include="Views\Partials\Grid\Bootstrap2-Fluid.cshtml" />
+    <Content Include="Views\Partials\vcrsFooter.cshtml" />
+    <Content Include="Views\Partials\vcrsServiceBooking.cshtml" />
+    <Content Include="Views\Partials\vcrsTopNavigation.cshtml" />
+    <Content Include="Views\Partials\vcrsVerticalNavigation.cshtml" />
+    <Content Include="Views\Partials\vcrsWheelChange.cshtml" />
+    <Content Include="Views\Partials\vcrsWindowRepair.cshtml" />
+    <Content Include="Views\vcrsAbout.cshtml" />
+    <Content Include="Views\vcrsContent.cshtml" />
+    <Content Include="Views\vcrsHomePage.cshtml" />
+    <Content Include="Views\vcrsLayout.cshtml" />
+    <Content Include="Views\vcrsServiceBooking.cshtml" />
+    <Content Include="Views\vcrsWheelChange.cshtml" />
+    <Content Include="Views\vcrsWorkshopBase.cshtml" />
+    <Content Include="Views\vcrsWorkshopContent.cshtml" />
+    <Content Include="vcrs_plugin\assets\cities\cities.json" />
+    <Content Include="vcrs_plugin\assets\i18n\en.json" />
+    <Content Include="vcrs_plugin\assets\i18n\sv.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
