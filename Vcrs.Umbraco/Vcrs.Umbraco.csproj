@@ -259,6 +259,8 @@
     <Content Include="config\imageprocessor\processing.config" />
     <Content Include="config\imageprocessor\cache.config" />
     <Content Include="App_Plugins\ModelsBuilder\package.manifest" />
+    <Content Include="css\vcrs-bootstrap.css" />
+    <Content Include="css\vcrs-default.css" />
     <Content Include="Media\Web.config" />
     <Content Include="config\umbracoSettings.config" />
     <Content Include="config\trees.config" />
@@ -282,6 +284,11 @@
     <Content Include="App_Plugins\TACDIS\package.manifest" />
     <None Include="packages.config" />
     <Content Include="vcrs_plugin\assets\styles\app.css" />
+    <Content Include="vcrs_templates\fonts\icons\icons.svg" />
+    <Content Include="vcrs_templates\images\background\luxury.jpg" />
+    <Content Include="vcrs_templates\images\background\v40-hero.jpg" />
+    <Content Include="vcrs_templates\images\background\V90-start.jpg" />
+    <Content Include="vcrs_templates\images\background\xc60-hero.jpg" />
     <Content Include="Views\Web.config" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
@@ -310,6 +317,10 @@
     <Content Include="vcrs_plugin\assets\cities\cities.json" />
     <Content Include="vcrs_plugin\assets\i18n\en.json" />
     <Content Include="vcrs_plugin\assets\i18n\sv.json" />
+    <Content Include="vcrs_templates\fonts\icons\icons.eot" />
+    <Content Include="vcrs_templates\fonts\icons\icons.ttf" />
+    <Content Include="vcrs_templates\fonts\icons\icons.woff" />
+    <Content Include="vcrs_templates\fonts\icons\icons.woff2" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
