@@ -20,11 +20,12 @@
             <a href="/" class="logo-container">
                 <h1>
                     VCRS Demo Dealer
-                    @*vcrs:ResourceUrl:@ConfigurationManager.AppSettings["vcrs:ResourceUrl"],
+                    vcrs:ResourceUrl:@ConfigurationManager.AppSettings["vcrs:ResourceUrl"],
                     vcrs:ServiceUrl:@ConfigurationManager.AppSettings["vcrs:ServiceUrl"],
                     vcrs:ResourceUrl:@SettingsHelper.GetSetting("vcrs:ResourceUrl"),
-                    vcrs:ServiceUrl:@SettingsHelper.GetSetting("vcrs:ServiceUrl"),*@
-                    
+                    vcrs:ServiceUrl:@SettingsHelper.GetSetting("vcrs:ServiceUrl"),
+                    Version:@typeof(SettingsHelper).Assembly..GetCustomAttribute<System.Reflection.AssemblyFileVersionAttribute>().Version
+
                 </h1>
             </a>
             <div class="navigation-container hidden-lt-md">
