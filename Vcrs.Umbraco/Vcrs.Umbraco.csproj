@@ -269,7 +269,6 @@
     <Content Include="App_Plugins\TACDIS\backoffice\configurationTree\edit.html" />
     <Content Include="App_Plugins\TACDIS\vcrs.resource.js" />
     <Content Include="bin\PackageActionsContrib.dll" />
-    <Content Include="bin\Vcrs.Core.Client.dll" />
     <Content Include="bin\Vcrs.Plugins.Extensions.dll" />
     <Content Include="bin\Vcrs.Plugins.Umbraco.dll" />
     <Content Include="config\imageprocessor\security.config" />
