@@ -3,4 +3,4 @@
     Layout = "VcrsLayout.cshtml";
 }
 
-@Html.Partial("vcrsServiceBooking")
+@Html.Partial("vcrsServiceBooking", new ViewDataDictionary { { "workshopFilter", @Umbraco.Field("workshopFilter")}, { "proxyUrl", @Umbraco.Field("proxyUrl")} } )

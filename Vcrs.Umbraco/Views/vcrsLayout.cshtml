@@ -1,4 +1,4 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿	@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @using Vcrs.Plugins.Extensions.HtmlHelpers
 @{
     Layout = null;
@@ -15,6 +15,27 @@
     <link rel="stylesheet" href="~/css/vcrs-default.css">
     @Html.Assets().Styles.Render()
 	  @RenderSection("header", required: false)
+	
+	<script type="text/javascript">
+		
+		window.vcrsTracking = window.vcrsTracking || {};
+			
+		window.vcrsTracking.trackEvent = function(eventName, eventData) {
+			if (eventName === 'SB:ConfirmService')
+			{
+				console.log({message: 'take special care of this message', eventData: eventData});
+			}
+			else
+			{
+				console.log({eventName: eventName, eventData: eventData});
+			}
+		}
+	
+		window.vcrsTracking.trackException = function(error) {
+			console.log(error);
+		}
+	</script>
+		
 </head>
 <body>
 	<div class="main-content" role="main">
@@ -26,6 +47,5 @@
 	@Html.Partial("vcrsFooter")
 	
 	</div>
-
 </body>
 </html>
