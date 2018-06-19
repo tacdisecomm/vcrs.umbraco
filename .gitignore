@@ -18,3 +18,4 @@ VCRS.Plugins.Umbraco.sln.DotSettings.user
 VCRS.Plugins.Umbraco.sln.DotSettings.zip
 /Vcrs.Plugins.Umbraco.Tests/bin/Release
 /Vcrs.Plugins.Umbraco.Tests/obj/Release
+/Vcrs.Umbraco/Vcrs.Umbraco.csproj.user
