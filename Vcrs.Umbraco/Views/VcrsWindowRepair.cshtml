@@ -1,5 +1,6 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.VcrsWindowRepair>
-@using ContentModels = Umbraco.Web.PublishedContentModels;
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{
-	Layout = null;
+    Layout = "VcrsLayout.cshtml";
 }
+
+@Html.Partial("vcrsWindowRepair", new ViewDataDictionary { { "workshopFilter", @Umbraco.Field("workshopFilter") }, { "proxyUrl", @Umbraco.Field("proxyUrl") } })
