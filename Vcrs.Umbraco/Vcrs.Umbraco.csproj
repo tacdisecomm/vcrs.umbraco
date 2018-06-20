@@ -335,6 +335,7 @@
     <Content Include="vcrs_templates\fonts\icons\icons.ttf" />
     <Content Include="vcrs_templates\fonts\icons\icons.woff" />
     <Content Include="vcrs_templates\fonts\icons\icons.woff2" />
+    <Content Include="Views\vcrsWindowRepair.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

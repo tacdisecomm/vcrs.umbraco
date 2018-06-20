@@ -1,6 +1,0 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
-@{
-    Layout = "VcrsLayout.cshtml";
-}
-
-@Html.Partial("vcrsWheelChange", new ViewDataDictionary { { "workshopFilter", @Umbraco.Field("workshopFilter")}, { "proxyUrl", @Umbraco.Field("proxyUrl")} } )
